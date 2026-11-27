@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome 窗口置顶",
+  "version": "1.0.0",
+  "description": "一键切换当前 Chrome 窗口的 Windows 始终置顶状态。",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8765/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+"action": {
+    "default_title": "切换窗口置顶",
+    "default_icon": {
+        "16": "pin-gray-16.png",
+        "32": "pin-gray-32.png"
+    }
+}
+}
